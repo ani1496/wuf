@@ -1,0 +1,26 @@
+{
+  "name": "wuf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "wuf": "./bin/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "wuf"
+  ],
+  "author": "Ani Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.1"
+  }
+}
