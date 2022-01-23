@@ -22,7 +22,7 @@ const getBrownieQuestions = (name) => {
         return console.log(await responses.getCoolAnswer('Brownie'))
       }
 
-      inquirer.prompt([{
+      return inquirer.prompt([{
         type: 'input',
         name: 'problem',
         message: 'What is the problem from your point of view?'
@@ -42,6 +42,9 @@ const getBrownieQuestions = (name) => {
     } catch {
       console.log('Something went wrong, fuck off')
     }
+  }).then(async () => {
+    console.log('');
+    return console.log(await responses.getDotWantToTalk(name, 'Brownie'));
   });
 }
 

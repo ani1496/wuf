@@ -24,9 +24,7 @@ inquirer.prompt([
     console.log('')
 
     if (answers.talker === 'Brownie Shytles') {
-      await getBrownieQuestions(options.name);
-      console.log('');
-      return console.log(await responses.getDotWantToTalk(options.name, answers.talker));
+      getBrownieQuestions(options.name);
     }
   }
   else {
